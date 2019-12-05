@@ -1,0 +1,380 @@
+html * {
+  margin: 0;
+  padding: 0;
+  font-family: 'EB Garamond', Times, serif;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  margin: 0;
+  padding: 0;
+  cursor: grab; }
+  body:active {
+    cursor: grabbing; }
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden; }
+
+.anim {
+  opacity: 0; }
+
+.brodtekst {
+  width: 720px; }
+
+.mellemtekst {
+  width: 720px;
+  margin: 120px auto; }
+  .mellemtekst p:nth-child(1) {
+    margin-bottom: 30px; }
+
+.spacer {
+  margin-top: 90px;
+  margin-bottom: 90px; }
+
+.centerTekst {
+  margin-right: auto;
+  margin-left: auto; }
+
+.citat {
+  text-align: center; }
+
+.billedtekst {
+  font-size: 10px;
+  text-transform: uppercase; }
+
+.naeste {
+  position: sticky;
+  position: -webkit-sticky;
+  z-index: 10;
+  bottom: 105px;
+  left: 15px;
+  transform: rotateZ(-90deg); }
+  .naeste img {
+    height: 9px;
+    margin-right: 12px; }
+  .naeste a {
+    color: #1A1918;
+    font-weight: 700;
+    text-decoration: none; }
+
+img, span, p, h1, h2, h3, h4, h5, h6 {
+  color: #1A1918;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none; }
+
+h2 {
+  font-size: 30px; }
+
+p {
+  font-size: 24px;
+  line-height: 1.4; }
+
+.bold {
+  font-weight: 700;
+  font-style: normal; }
+
+.bolditalic {
+  font-weight: 700;
+  font-style: italic; }
+
+.regitalic {
+  font-weight: 400;
+  font-style: italic; }
+
+.reg {
+  font-weight: 400;
+  font-style: normal; }
+
+.menu {
+  position: fixed;
+  z-index: 11;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: calc(100vh - 120px);
+  padding: 60px; }
+  .menu .navigation {
+    animation-name: animation-fadein;
+    animation-duration: 1.5s;
+    animation-delay: 2.25s;
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-fill-mode: both; }
+  .menu .menu-btn {
+    animation-name: animation-fadein;
+    animation-duration: 1.5s;
+    animation-delay: 2s;
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-fill-mode: both; }
+  .menu img {
+    height: 30px; }
+    .menu img:hover {
+      cursor: pointer; }
+  .menu .share {
+    animation-name: animation-fadein;
+    animation-duration: 1.5s;
+    animation-delay: 2s;
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-fill-mode: both; }
+    .menu .share img {
+      height: 25px; }
+
+.intro {
+  z-index: 10;
+  position: relative;
+  display: grid;
+  align-content: space-between;
+  background-color: #F0E2D3;
+  height: calc(100vh - 120px);
+  width: calc(100% - 120px);
+  padding: 60px; }
+  .intro:after {
+    content: "";
+    background-image: url(/images/noisy-texture-300x300-o18-d28-c-f34379-t1.png);
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    pointer-events: none; }
+  .intro .logo {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px; }
+    .intro .logo span {
+      animation-name: animation-fadein;
+      animation-duration: 1.5s;
+      animation-delay: 1.5s;
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-fill-mode: both; }
+
+.indholdsfortegnelse {
+  width: 720px;
+  margin: 0 auto; }
+  .indholdsfortegnelse div {
+    display: block;
+    font-size: 120px;
+    line-height: 1.1;
+    animation-name: animation-1;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-fill-mode: both; }
+    .indholdsfortegnelse div a {
+      padding: 0 10px;
+      font-weight: 700;
+      color: #1A1918;
+      text-decoration: none;
+      transition: .3s; }
+    .indholdsfortegnelse div:nth-child(1) {
+      animation-delay: 0.5s; }
+      .indholdsfortegnelse div:nth-child(1) a:hover {
+        color: #FDBC66; }
+    .indholdsfortegnelse div:nth-child(2) {
+      animation-delay: 0.6s; }
+      .indholdsfortegnelse div:nth-child(2) a:hover {
+        color: #90CEB8; }
+    .indholdsfortegnelse div:nth-child(3) {
+      animation-delay: 0.7s; }
+      .indholdsfortegnelse div:nth-child(3) a:hover {
+        color: #FEA166; }
+    .indholdsfortegnelse div:nth-child(4) {
+      animation-delay: 0.8s; }
+      .indholdsfortegnelse div:nth-child(4) a:hover {
+        color: #FDBC66; }
+    .indholdsfortegnelse div:nth-child(5) {
+      animation-delay: 0.9s; }
+      .indholdsfortegnelse div:nth-child(5) a:hover {
+        color: #FDBC66; }
+  .indholdsfortegnelse .casehvem {
+    display: flex;
+    align-items: center;
+    margin: 30px 0 21px; }
+    .indholdsfortegnelse .casehvem span {
+      font-size: 30px; }
+    .indholdsfortegnelse .casehvem .streg {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: #1A1918;
+      margin: 0 36px; }
+  .indholdsfortegnelse h1 {
+    padding: 0 10px;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.4; }
+
+@keyframes animation-1 {
+  from {
+    transform: translateY(50px);
+    opacity: 0; }
+  to {
+    transform: translateY(0px);
+    opacity: 1; } }
+@keyframes animation-fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.disclaimer {
+  width: 180px;
+  color: #1A1918;
+  font-size: 12px;
+  animation-name: animation-fadein;
+  animation-duration: 1.5s;
+  animation-delay: 1.75s;
+  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation-fill-mode: both; }
+  .disclaimer span {
+    display: block; }
+  .disclaimer a {
+    color: #1A1918; }
+    .disclaimer a:hover {
+      color: #0a0a0a; }
+
+.gallery {
+  margin: 90px auto;
+  /*max-width: 1080px;*/ }
+  .gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.gallery-land {
+  display: flex;
+  margin-top: 20px; }
+  .gallery-land img {
+    height: 720px; }
+
+.gallery-landscape-tekst {
+  margin-top: 15px;
+  width: 300px; }
+
+.gallery-to-port {
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px; }
+  .gallery-to-port img {
+    height: 720px;
+    object-fit: cover; }
+
+.gallery-video {
+  margin-top: 20px; }
+
+.gallery-fullwidth img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover; }
+
+.underskrift {
+  margin: 45px auto; }
+  .underskrift h2 {
+    /*width: 400px;*/
+    text-align: center;
+    margin: 0 auto; }
+
+.sektionHeader {
+  padding: 60px; }
+  .sektionHeader .titel {
+    font-size: 24px; }
+  .sektionHeader .overskrift {
+    margin: 90px auto 45px; }
+    .sektionHeader .overskrift span {
+      display: block;
+      font-size: 150px;
+      text-align: center;
+      line-height: 1; }
+
+.webdesign {
+  z-index: 9;
+  position: relative;
+  background-color: #FDBC66; }
+  .webdesign:after {
+    content: "";
+    background-image: url(/images/noisy-texture-300x300-o18-d28-c-f34379-t1.png);
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    pointer-events: none; }
+  .webdesign .sektionWrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 60px; }
+    .webdesign .sektionWrapper .brodtekst {
+      margin: 0 auto; }
+      .webdesign .sektionWrapper .brodtekst p {
+        margin-bottom: 30px; }
+
+.ecommerce {
+  z-index: 8;
+  position: relative;
+  background-color: #90CEB8; }
+  .ecommerce:after {
+    content: "";
+    background-image: url(/images/noisy-texture-300x300-o18-d28-c-f34379-t1.png);
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    pointer-events: none; }
+  .ecommerce .brodtekst {
+    margin: 0 0 30px 10vw; }
+
+.hvem {
+  z-index: 7;
+  position: relative;
+  background-color: #f2f2f2; }
+  .hvem:after {
+    content: "";
+    background-image: url(/images/noisy-texture-300x300-o18-d28-c-f34379-t1.png);
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    pointer-events: none; }
+  .hvem .sektionHeader .overskrift {
+    width: 1100px; }
+    .hvem .sektionHeader .overskrift span {
+      text-align: left; }
+  .hvem .sektionWrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 60px; }
+    .hvem .sektionWrapper .brodtekst {
+      margin: 0 auto 0 0; }
+      .hvem .sektionWrapper .brodtekst p {
+        margin-bottom: 30px; }
+    .hvem .sektionWrapper .gallery-to-port p {
+      padding: 30px 0; }
+    .hvem .sektionWrapper .gallery-to-port span {
+      display: block;
+      width: 480px; }
+
+/*# sourceMappingURL=master.css.map */
