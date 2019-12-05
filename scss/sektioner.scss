@@ -60,10 +60,11 @@
     }
 
     .galleritekst {
-    width: 350px;
     z-index: 1;
+    margin-top: 10px;
 
     @media only screen and (min-width: 998px) {
+        width: 350px;
         margin: 45px auto 0 120px;
     }
 
@@ -395,7 +396,7 @@
 
     .overskrift {
         font-size: 11vw;
-        margin: 120px auto 75px;
+        /*margin: 120px auto 75px;*/
 
         @media only screen and (min-width: 998px) {
             font-size: 5vw;
@@ -466,7 +467,7 @@
 
     .overskrift {
         font-size: 11vw;
-        margin: 120px auto 75px;
+        /*margin: 120px auto 75px;*/
 
         @media only screen and (min-width: 998px) {
             font-size: 5vw;
@@ -543,7 +544,7 @@
 
     .overskrift {
     font-size: 11vw;
-    margin: 120px auto 75px;
+    /*margin: 120px auto 75px;*/
 
         @media only screen and (min-width: 998px) {
             width: calc(78vw + 20px);
