@@ -1,0 +1,5 @@
+Kloning af projektet over til vores test-server: 
+
+$ git clone --bare https://github.com/rasmusgrowup/growupstudio
+
+$ git push --mirror https://github.com/rasmusgrowup/rasmusgrowup.github.io
