@@ -11,11 +11,7 @@
     }
 
     .overskrift {
-        margin: 60px auto;
-
-        @media only screen and (min-width: 998px) {
-            margin: 90px auto;
-        }
+        margin: 90px auto 0;
 
         span {
             display: block;
@@ -192,6 +188,10 @@
         height: calc(100vh - 120px);
         width: calc(100% - 120px);
         padding: 60px;
+    }
+
+    @media only screen and (max-width: 440px) {
+        height: calc(85vh - 60px);
     }
 
     &:after {
