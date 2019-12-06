@@ -121,34 +121,13 @@ footer {
 }
 
 .button-tilbage {
-    width: auto;
-    border: 1px solid #0a0a0a;
+    position: absolute;
+    top: 30px;
+    left: 30px;
 
-    color: #0a0a0a;
-    margin: 30px;
-    padding: 9px 18px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
+    @media only screen and (min-width: 998px) {
+        top: 60px;
+        left: 60px;
 
-    &:hover {
-        background-color: #0a0a0a;
-        color: #f2f2f2;
-
-        span {
-            background-image: url(/svg/arrow-back-hover.svg);
-        }
-    }
-
-    span {
-        display: inline-block;
-        margin-right: 10px;
-        height: 15px;
-        width: 15px;
-        background-image: url(/svg/arrow-back.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 }
