@@ -1,7 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="44.175" height="20.749" viewBox="0 0 44.175 20.749">
-  <g id="Group_2" data-name="Group 2" transform="translate(44.175 19.669) rotate(180)">
-    <line id="Line_1" data-name="Line 1" x2="43.102" transform="translate(0 9.037)" fill="none" stroke="#202020" stroke-width="3"/>
-    <line id="Line_2" data-name="Line 2" x2="9.765" y2="9.417" transform="translate(33.369)" fill="none" stroke="#202020" stroke-width="3"/>
-    <line id="Line_3" data-name="Line 3" x2="9.765" y2="9.417" transform="translate(42.96 8.864) rotate(90)" fill="none" stroke="#202020" stroke-width="3"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="50.016" height="50" viewBox="0 0 50.016 50">
+  <g id="up-arrow" transform="translate(56.416 -6.4) rotate(90)">
+    <path id="Path_1" data-name="Path 1" d="M55.9,30.16,32.656,6.917a1.767,1.767,0,0,0-2.5,0L6.917,30.16a1.767,1.767,0,0,0,0,2.5,1.767,1.767,0,0,0,2.5,0l20.23-20.23V54.651a1.765,1.765,0,0,0,3.53,0V12.426L53.4,32.656a1.767,1.767,0,0,0,2.5,0,1.807,1.807,0,0,0,0-2.5Z" transform="translate(62.8 62.816) rotate(180)" fill="#0a0a0a"/>
   </g>
 </svg>

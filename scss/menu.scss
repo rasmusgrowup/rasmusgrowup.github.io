@@ -107,6 +107,11 @@ nav {
     right: 30px;
     cursor: pointer;
     opacity: 1;
+
+    @media only screen and (min-width: 441px) {
+        bottom:60px;
+        right:60px;
+    }
 }
 
 .crossone {

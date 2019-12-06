@@ -98,18 +98,23 @@
     }
 
     .opgaver {
-        margin: 120px auto 60px;
+        margin: 60px auto;
 
         @media only screen and (min-width: 998px) {
+            margin: 120px auto 60px;
             width: 78vw;
         }
 
         span {
             display: block;
             width: 270px;
-            margin: 0 auto 60px 0;
+            margin: 0 auto 30px 0;
             font-size: 30px;
             font-weight: 700;
+
+            @media only screen and (min-width: 998px) {
+                margin: 0 auto 60px 0;
+            }
         }
 
         .opgaverGrid {
@@ -117,10 +122,11 @@
             display: grid;
             grid-template-columns: 1fr;
             column-gap: 60px;
-            row-gap: 60px;
+            row-gap: 30px;
             text-align: left;
 
             @media only screen and (min-width: 550px) {
+                row-gap: 60px;
                 grid-template-columns: 1fr 1fr;
             }
 
@@ -221,103 +227,140 @@
             animation-fill-mode: both;
         }
     }
+}
+
+.overskrift {
+    @media only screen and (max-width: 998px) {
+        span {
+            text-align: left;
+        }
+    }
+}
+
+
+.indholdsfortegnelse {
+
+    div {
+        display: block;
+        font-size: 13vw;
+        line-height: 1.1;
+        animation-name: animation-1;
+        animation-duration: 1.5s;
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-fill-mode: both;
+
+            @media only screen and (min-width: 998px) {
+            font-size: 10vw;
+            margin: 0 12vw;
+            }
+
+        a {
+            /*padding: 0 10px;*/
+            font-weight: 700;
+            color: #1A1918;
+            text-decoration: none;
+            /*transition: .3s;*/
+
+                @media only screen and (max-width: 600px) {
+                padding: 0;
+                }
+        }
+
+        &:nth-child(1) {animation-delay: 3.5s;a:hover {color: #FDBC66;}}
+        &:nth-child(2) {animation-delay: 3.6s;a:hover {color: #c69b98;}}
+        &:nth-child(3) {animation-delay: 3.7s;a:hover {color: #8ebdd0;}}
+        &:nth-child(4) {animation-delay: 3.8s;a:hover {color:#c69b98;}}
+        &:nth-child(5) {animation-delay: 3.9s;a:hover {color: #FDBC66;}}
     }
 
-        .overskrift {
-            @media only screen and (max-width: 998px) {
-                span {
-                    text-align: left;
-                }
-            }
+    .casehvem {
+    display: flex;
+    align-items: center;
+    margin-top: 21px;
+    margin-bottom: 21px;
+
+    @media only screen and (min-width: 998px) {
+        margin: 30px 12vw 21px;
+    }
+
+        @media only screen and (max-width: 600px) {
+        flex-direction: column;
+        align-items: flex-start;
         }
 
-
-    .indholdsfortegnelse {
-
-        div {
-            display: block;
-            font-size: 13vw;
-            line-height: 1.1;
-            animation-name: animation-1;
-            animation-duration: 1.5s;
-            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-            animation-fill-mode: both;
-
-                @media only screen and (min-width: 998px) {
-                font-size: 10vw;
-                margin: 0 12vw;
-                }
-
-            a {
-                /*padding: 0 10px;*/
-                font-weight: 700;
-                color: #1A1918;
-                text-decoration: none;
-                /*transition: .3s;*/
-
-                    @media only screen and (max-width: 600px) {
-                    padding: 0;
-                    }
-            }
-
-            &:nth-child(1) {animation-delay: 3.5s;a:hover {color: #FDBC66;}}
-            &:nth-child(2) {animation-delay: 3.6s;a:hover {color: #c69b98;}}
-            &:nth-child(3) {animation-delay: 3.7s;a:hover {color: #8ebdd0;}}
-            &:nth-child(4) {animation-delay: 3.8s;a:hover {color:#c69b98;}}
-            &:nth-child(5) {animation-delay: 3.9s;a:hover {color: #FDBC66;}}
-        }
-
-        .casehvem {
-        display: flex;
-        align-items: center;
-        margin-top: 21px;
-        margin-bottom: 21px;
+        span {
+        font-size: 30px;
 
         @media only screen and (min-width: 998px) {
-            margin: 30px 12vw 21px;
+            font-size: 2.3vw;
+        }
+    }
+
+        .streg {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: #1A1918;
+            margin: 0 36px;
+        }
+    }
+
+    h1 {
+        /*padding: 0 10px;*/
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 1.4;
+
+        @media only screen and (max-width: 600px) {
+        padding: 0;
         }
 
-            @media only screen and (max-width: 600px) {
-            flex-direction: column;
-            align-items: flex-start;
-            }
-
-            span {
-            font-size: 30px;
-
-            @media only screen and (min-width: 998px) {
-                font-size: 2.3vw;
-            }
+        @media only screen and (min-width: 998px) {
+            font-size: 1.5vw;
         }
 
-            .streg {
-                display: block;
-                width: 24px;
-                height: 2px;
-                background-color: #1A1918;
-                margin: 0 36px;
-            }
+        @media only screen and (min-width: 1800px) {
+        font-size: 30px;
+        }
+    }
+
+    .disclaimer {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        width: 250px;
+        color: #1A1918;
+        font-size: 12px;
+        opacity: 0.25;
+        margin: 0;
+
+        @media only screen and (min-width: 441px) {
+            bottom: 60px;
+            left: 60px;
+        }
+        /*    animation-name: animation-fadein;
+            animation-duration: 1.5s;
+            animation-delay: 5.75s;
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-fill-mode: both;
+        */
+        &:hover {
+            opacity: 1;
+        }
+        span {
+            display: block;
         }
 
-        h1 {
-            /*padding: 0 10px;*/
-            font-size: 21px;
-            font-weight: 400;
-            line-height: 1.4;
+        a {
+        color: #1A1918;
+        margin-right: 10px;
 
-            @media only screen and (max-width: 600px) {
-            padding: 0;
-            }
-
-            @media only screen and (min-width: 998px) {
-                font-size: 1.5vw;
-            }
-
-            @media only screen and (min-width: 1800px) {
-            font-size: 30px;
+            &:hover {
+            color: #FDBC66;
             }
         }
     }
+}
 
 @keyframes animation-1 {
     from {transform: translateY(50px);opacity: 0;}
@@ -421,7 +464,7 @@
     }
 
     .left  {
-        margin: 45px auto;
+        margin: 0 auto;
 
     @media only screen and (min-width: 998px) {
             margin: -60px auto 0 0;
@@ -487,7 +530,7 @@
     }
 
     .galleritekst {
-        margin: 45px 0;
+        margin: 45px 0 0 0;
         width: 720px;
 
         @media only screen and (min-width: 998px) {
