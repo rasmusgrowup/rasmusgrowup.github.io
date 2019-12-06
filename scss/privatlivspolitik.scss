@@ -1,18 +1,29 @@
 .privatlivspolitik {
     z-index: 11;
-    margin: 0 30px;
+    margin: 0 30px 60px;
 
     @media only screen and (min-width: 998px) {
     margin: 60px 15vw;
+
+        h1 {
+            font-size: 6vw;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 2vw;
+            margin-bottom: 18px;
+        }
     }
 
     h1 {
-        font-size: 6vw;
+        font-size: 45px;
         margin-bottom: 30px;
     }
 
     p {
-        font-size: 2vw;
+        width: 75vw;
+        font-size: 21px;
         margin-bottom: 18px;
     }
 
@@ -24,15 +35,25 @@
 
     @media only screen and (min-width: 998px) {
     margin: 60px 15vw;
+
+        h1 {
+            font-size: 6vw;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 1.6vw;
+            margin-bottom: 18px;
+        }
     }
 
     h1 {
-        font-size: 6vw;
+        font-size: 45px;
         margin-bottom: 30px;
     }
 
     p {
-        font-size: 1.6vw;
+        font-size: 21px;
         margin-bottom: 18px;
     }
 
@@ -40,20 +61,42 @@
 
 .vilkaargrid {
     display: grid;
-    grid-template-columns: 250px auto;
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+    margin-bottom: 60px;
+
+    @media only screen and (min-width: 998px) {
+    grid-template-columns: 280px auto;
+    column-gap: 60px;
     row-gap: 60px;
     margin-top: 120px;
 
+        p {
+            font-size: 1.5vw;
+            font-weight: 300;
+            margin-bottom: 18px;
+        }
+
+        span {
+            opacity: 0.5;
+            font-size: 1.5vw;
+            font-weight: 300;
+            margin-bottom: 18px;
+        }
+    }
+
     p {
-        font-size: 1.6vw;
+        width: 75vw;
+        font-size: 18px;
         font-weight: 300;
         margin-bottom: 18px;
     }
 
     span {
-        opacity: 0.5;
-        font-size: 1.6vw;
+        opacity: 1;
+        font-size: 18px;
         font-weight: 700;
+        margin-top: 30px;
         margin-bottom: 18px;
     }
 }
