@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="/scss/gallery.min.css">
     <link rel="stylesheet" href="/scss/tekst.min.css">
     <link rel="stylesheet" href="/scss/sektioner.min.css">
+    <link rel="stylesheet" href="/scss/privatlivspolitik.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -54,8 +55,8 @@
             <a href="https://www.instagram.com/growupstudio.dk" target="_blank">Instagram</a>
         </div>
         <div class="disclaimer">
-            <span>Indholdet på dette websted er ophavretsligt beskyttet og ejes af Growup IVS eller de virksomheder, vi samarbejder med. © 2019</span>
-            <a href="/privatlivspolitik.html">Privatlivspolitik</a><a href="/vilkaar.html">Generelle Vilkår</a>
+            <span>Indholdet på dette websted er ophavsretsligt beskyttet og ejes af Growup IVS eller de virksomheder, vi samarbejder med. © 2019</span>
+            <a href="/privatlivspolitik.html" id="privat">Privatlivspolitik</a> <!--<a href="/vilkaar.html">Generelle Vilkår</a>-->
         </div>
         <div class="close-btn" id="close-menu">
                 <div class="crossone">
@@ -72,7 +73,10 @@
         </div>
     </div>
 </header>
-<main>
+
+
+
+<main id="swup" class="transition-fade">
     <div class="wrapper" id="wrapper">
         <div class="landing">
             <div class="inner-wrapper">
@@ -312,7 +316,6 @@
         </div>
     </div>
 </div>
-</main>
 <footer>
     <div class="">
         <div class="calltoaction">
@@ -320,16 +323,19 @@
             <a class="button" href="mailto:hello@growupstudio.dk">Send os en mail</a>
         </div>
         <div class="copyright">
-            <span>Indholdet på dette websted er ophavretsligt beskyttet og ejes af Growup IVS eller de virksomheder, vi samarbejder med. © 2019</span>
-            <a href="#">Privatlivspolitik</a><a href="#">Generelle Vilkår</a>
+            <span>Indholdet på dette websted er ophavsretsligt beskyttet og ejes af Growup IVS eller de virksomheder, vi samarbejder med. © 2019</span>
+            <a href="/privatlivspolitik.html">Privatlivspolitik</a><!--<a href="/vilkaar.html">Generelle Vilkår</a>-->
         </div>
     </div>
 </footer>
+</main>
+
     <script src="/js/jquery.js"></script>
     <script src="/js/menu.js"></script>
     <script src="/js/smooth-scroll.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/node_modules/swup/dist/swup.js"></script>
 
     <script>
            var scroll = new SmoothScroll('a[href*="#"]', {
@@ -350,6 +356,10 @@
 
     <script>
             AOS.init({offset: 0, duration: 1000, easing: 'ease-out-quad', once: false, anchorPlacement: 'top-bottom',});
+    </script>
+
+    <script type="text/javascript">
+        const swup = new Swup();
     </script>
 
     <script type="text/javascript">

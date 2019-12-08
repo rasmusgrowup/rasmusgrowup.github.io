@@ -13,3 +13,7 @@ document.getElementById('close-menu').addEventListener('click', function () {
 document.getElementById('wrapper').addEventListener('click', function () {
     slideup.classList.remove('show-menu');
 });
+
+document.getElementById('privat').addEventListener('click', function () {
+    slideup.classList.remove('show-menu');
+});

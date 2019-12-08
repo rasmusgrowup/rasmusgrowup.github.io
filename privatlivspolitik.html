@@ -55,7 +55,7 @@
         </div>
         <div class="disclaimer">
             <span>Indholdet på dette websted er ophavretsligt beskyttet og ejes af Growup IVS eller de virksomheder, vi samarbejder med. © 2019</span>
-            <a href="#">Privatlivspolitik</a><a href="/vilkaar.html">Generelle Vilkår</a>
+            <a href="/privatlivspolitik.html" id="privat">Privatlivspolitik</a><!--<a href="/vilkaar.html">Generelle Vilkår</a>-->
         </div>
         <div class="close-btn" id="close-menu">
                 <div class="crossone">
@@ -73,7 +73,7 @@
     </div>
 </header>
 
-<main>
+<main id="swup" class="transition-fade">
     <div class="wrapper" id="wrapper">
         <div class="">
             <a class="button-tilbage" href="/"><img src="/svg/cross2.svg" alt=""></a>
@@ -113,6 +113,10 @@
 
     <script>
             AOS.init({offset: 0, duration: 1000, easing: 'ease-out-quad', once: false, anchorPlacement: 'top-bottom',});
+    </script>
+
+    <script type="text/javascript">
+        const swup = new Swup();
     </script>
 
     <script type="text/javascript">

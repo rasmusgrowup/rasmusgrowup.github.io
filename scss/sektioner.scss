@@ -158,10 +158,12 @@
     }
 
     .inner-wrapper {
-        animation-name: landing-anim;
-        animation-duration: 3.8s;
+        -webkit-animation: landing-anim normal 3.8s forwards;
+        -moz-animation: landing-anim normal 3.8s forwards;
+        -o-animation: landing-anim normal 3.8s forwards;
+        animation-name: landing-anim normal 3.8s forwards;
         animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
-        animation-fill-mode: both;
+        animation-iteration-count: 1;
     }
 
     span {
@@ -557,6 +559,7 @@
     z-index: 5;
     position: relative;
     background-color: #f2f2f2;
+    margin-bottom: 500px;
 
     &:after {
         content: "";
