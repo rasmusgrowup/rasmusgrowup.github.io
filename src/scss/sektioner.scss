@@ -1,0 +1,683 @@
+.sektionHeader {
+    padding: 30px;
+
+    @media only screen and (min-width: 998px) {
+        padding: 60px;
+    }
+
+    .titel {
+        display: block;
+        font-size: 24px;
+    }
+
+    .overskrift {
+        margin: 90px auto 0;
+
+        span {
+            display: block;
+            text-align: left;
+            line-height: 0.9;
+
+            @media only screen and (min-width: 998px) {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.sektionWrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 30px 60px;
+
+    @media only screen and (min-width: 998px) {
+        margin: 0 5vw;
+        padding: 0 0 120px 0;
+    }
+
+    .brodtekst {
+    position: relative;
+    width: 87vw;
+    z-index: 1;
+
+    @media only screen and (max-width: 440px) {
+        width: calc(100vw - 60px);
+    }
+
+    @media only screen and (min-width: 998px) {
+    /*margin: 0 auto;*/
+    width: 40vw;
+    }
+
+        p {
+            margin-bottom: 30px;
+        }
+    }
+
+    .galleritekst {
+    z-index: 1;
+    margin-top: 10px;
+
+    @media only screen and (min-width: 998px) {
+        width: 350px;
+        margin: 45px auto 0 120px;
+    }
+
+        p {
+            font-size: 15px;
+            font-weight: 300;
+        }
+    }
+
+    .citation {
+        p::before {
+            content: '"';
+            position: absolute;
+            top: -60px;
+            left: -45px;
+            font-size: 120px;
+        }
+        p::after {
+            content: '"';
+            position: absolute;
+            bottom: -30px;
+            right: 30px;
+            font-size: 120px;
+        }
+    }
+
+    .gallery-to-port {
+        p {
+            padding: 30px 0;
+        }
+        span {
+            display: block;
+            max-width: 480px;
+        }
+    }
+
+    .opgaver {
+        margin: 60px auto;
+
+        @media only screen and (min-width: 998px) {
+            margin: 120px auto 60px;
+            width: 78vw;
+        }
+
+        span {
+            display: block;
+            width: 270px;
+            margin: 0 auto 30px 0;
+            font-size: 30px;
+            font-weight: 700;
+
+            @media only screen and (min-width: 998px) {
+                margin: 0 auto 60px 0;
+            }
+        }
+
+        .opgaverGrid {
+            display: ms-grid;
+            display: grid;
+            grid-template-columns: 1fr;
+            column-gap: 60px;
+            row-gap: 30px;
+            text-align: left;
+
+            @media only screen and (min-width: 550px) {
+                row-gap: 60px;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media only screen and (min-width: 998px) {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 300;
+                margin-bottom: 12px;
+            }
+        }
+    }
+}
+
+.landing {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 11;
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
+
+    @media only screen and (min-width: 998px) {
+        width: 80%;
+    }
+
+    .inner-wrapper {
+        -webkit-animation: landing-anim normal 3.8s forwards;
+        -moz-animation: landing-anim normal 3.8s forwards;
+        -o-animation: landing-anim normal 3.8s forwards;
+        animation-name: landing-anim normal 3.8s forwards;
+        animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+        animation-iteration-count: 1;
+    }
+
+    span {
+        font-size: 13vw;
+        font-weight: 700;
+
+        @media only screen and (min-width: 998px) {
+            font-size: 10vw;
+        }
+    }
+
+    @keyframes landing-anim {
+        0% {transform: translateY(0px);opacity: 0;}
+        75% {transform: translateY(0px);opacity: 1;}
+        100% {transform: translateY(-250px);opacity: 0;}
+    }
+}
+
+.intro {
+    z-index: 10;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #F0E2D3;
+    height: calc(100vh - 60px);
+    width: calc(100% - 60px);
+    padding: 30px;
+
+    @media only screen and (min-width: 998px) {
+        height: calc(100vh - 120px);
+        width: calc(100% - 120px);
+        padding: 60px;
+    }
+
+    @media only screen and (max-width: 440px) {
+        height: calc(85vh - 60px);
+    }
+
+    &:after {
+        content: "";
+        background-image: url(/src/images/noisy-texture-300x300-o18-d28-c-f34379-t1.png);
+        opacity: 0.25;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        position: absolute;
+        pointer-events: none
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+
+        a {
+            color: #1A1918;
+            text-decoration: none;
+            animation-name: animation-fadein;
+            animation-duration: 1.5s;
+            animation-delay: 6s;
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-fill-mode: both;
+        }
+    }
+}
+
+.overskrift {
+    @media only screen and (max-width: 998px) {
+        span {
+            text-align: left;
+        }
+    }
+}
+
+
+.indholdsfortegnelse {
+
+    div {
+        display: block;
+        font-size: 13vw;
+        line-height: 1.1;
+        animation-name: animation-1;
+        animation-duration: 1.5s;
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-fill-mode: both;
+
+            @media only screen and (min-width: 998px) {
+            font-size: 10vw;
+            margin: 0 12vw;
+            }
+
+        a {
+            /*padding: 0 10px;*/
+            font-weight: 700;
+            color: #1A1918;
+            text-decoration: none;
+            /*transition: .3s;*/
+
+                @media only screen and (max-width: 600px) {
+                padding: 0;
+                }
+        }
+
+        &:nth-child(1) {animation-delay: 3.5s;a:hover {color: #FDBC66;}}
+        &:nth-child(2) {animation-delay: 3.6s;a:hover {color: #c69b98;}}
+        &:nth-child(3) {animation-delay: 3.7s;a:hover {color: #8ebdd0;}}
+        &:nth-child(4) {animation-delay: 3.8s;a:hover {color:#c69b98;}}
+        &:nth-child(5) {animation-delay: 3.9s;a:hover {color: #FDBC66;}}
+    }
+
+    .casehvem {
+    display: flex;
+    align-items: center;
+    margin-top: 21px;
+    margin-bottom: 21px;
+
+    @media only screen and (min-width: 998px) {
+        margin: 30px 12vw 21px;
+    }
+
+        @media only screen and (max-width: 600px) {
+        flex-direction: column;
+        align-items: flex-start;
+        }
+
+        span {
+        font-size: 30px;
+
+        @media only screen and (min-width: 998px) {
+            font-size: 2.3vw;
+        }
+    }
+
+        .streg {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: #1A1918;
+            margin: 0 36px;
+        }
+    }
+
+    h1 {
+        /*padding: 0 10px;*/
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 1.4;
+
+        @media only screen and (max-width: 600px) {
+        padding: 0;
+        }
+
+        @media only screen and (min-width: 998px) {
+            font-size: 1.5vw;
+        }
+
+        @media only screen and (min-width: 1800px) {
+        font-size: 30px;
+        }
+    }
+
+    .disclaimer {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        width: 250px;
+        color: #1A1918;
+        font-size: 12px;
+        opacity: 0.25;
+        margin: 0;
+
+        @media only screen and (min-width: 441px) {
+            bottom: 60px;
+            left: 60px;
+        }
+        /*    animation-name: animation-fadein;
+            animation-duration: 1.5s;
+            animation-delay: 5.75s;
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-fill-mode: both;
+        */
+        &:hover {
+            opacity: 1;
+        }
+        span {
+            display: block;
+        }
+
+        a {
+        color: #1A1918;
+        margin-right: 10px;
+
+            &:hover {
+            color: #FDBC66;
+            }
+        }
+    }
+}
+
+@keyframes animation-1 {
+    from {transform: translateY(50px);opacity: 0;}
+    to {transform: translateY(0px);opacity: 1;}
+}
+
+@keyframes animation-fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+.webdesign {
+    z-index: 9;
+    position: relative;
+    background-color: #FDBC66;
+
+    &:after {
+        content: "";
+        background-image: url(/src/images/noisy-texture-300x300-o18-d28-c-f34379-t1.png);
+        opacity: 0.25;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        position: absolute;
+        pointer-events: none
+    }
+
+    p, span {
+        color: #311f12;
+    }
+
+    .overskrift {
+        font-size: 12.8vw;
+        @media only screen and (max-width: 998px)  {
+            span {
+                font-size: 15vw !important;
+            }
+        }
+    }
+
+    .gallery {
+        @media only screen and (min-width: 998px) {
+            margin-bottom: -30px;
+        }
+    }
+
+    .button {
+        &:hover {
+            color: #FDBC66;
+        }
+    }
+}
+
+.identitet {
+    z-index: 7;
+    position: relative;
+    background-color: #d5a094;
+
+    &:after {
+        content: "";
+        background-image: url(/src/images/noisy-texture-300x300-o18-d28-c-f34379-t1.png);
+        opacity: 0.25;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        position: absolute;
+        pointer-events: none
+    }
+
+    p, span {
+        color: #321a23;
+    }
+
+    .overskrift {
+        font-size: 11vw;
+        /*margin: 120px auto 75px;*/
+
+        @media only screen and (min-width: 998px) {
+            font-size: 5vw;
+        }
+
+        span {
+            text-align: center !important;
+        }
+    }
+
+    .brodtekst {
+        margin: 0 auto;
+
+        @media only screen and (min-width: 998px) {
+        /*margin: 0 auto;*/
+        width: 60vw;
+
+            p {
+            font-size: 2.1vw !important;
+            }
+        }
+    }
+
+    .left  {
+        margin: 0 auto;
+
+    @media only screen and (min-width: 998px) {
+            margin: -60px auto 0 0;
+        }
+    }
+
+    .galleritekst {
+        margin: 0 0 0 auto;
+    }
+
+    .button {
+        &:hover {
+            color: #d5a094;
+
+            span {
+                background-image: url(/src/svg/arrow-right-d5a094.svg);
+            }
+        }
+    }
+}
+
+.ecommerce {
+    z-index: 6;
+    position: relative;
+    background-color: #aad1d2;
+    background-color: #d4dfda;
+
+    &:after {
+        content: "";
+        background-image: url(/src/images/noisy-texture-300x300-o18-d28-c-f34379-t1.png);
+        opacity: 0.25;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        position: absolute;
+        pointer-events: none
+    }
+
+    p, span {
+        color: #192428;
+    }
+
+    .overskrift {
+        font-size: 11vw;
+        /*margin: 120px auto 75px;*/
+
+        @media only screen and (min-width: 998px) {
+            font-size: 5vw;
+        }
+    }
+
+    .brodtekst {
+
+        @media only screen and (min-width: 998px) {
+        margin: 0 auto;
+        width: 50vw;
+
+            p {
+                font-size: 1.8vw !important;
+            }
+        }
+    }
+
+    .galleritekst {
+        margin: 45px 0 0 0;
+        width: 720px;
+
+        @media only screen and (min-width: 998px) {
+            margin: 45px auto;
+        }
+
+        p {
+            width: 350px;
+        }
+    }
+
+    .button {
+        &:hover {
+            color: #d4dfda;
+
+            span {
+                background-image: url(/src/svg/arrow-right-d4dfda.svg);
+            }
+        }
+    }
+}
+
+.hvem {
+    z-index: 5;
+    position: relative;
+    background-color: #f2f2f2;
+    margin-bottom: 500px;
+
+    &:after {
+        content: "";
+        background-image: url(/src/images/noisy-texture-300x300-o18-d28-c-f34379-t1.png);
+        opacity: 0.25;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        position: absolute;
+        pointer-events: none
+    }
+
+    .brodtekst {
+        @media only screen and (min-width: 998px) {
+            width: calc(78vw + 20px);
+            margin: 0 auto 60px !important;
+        }
+
+        p {
+            font-weight: 300;
+        }
+    }
+
+    p {
+        padding: 0!important;
+    }
+
+    .overskrift {
+    font-size: 11vw;
+    /*margin: 120px auto 75px;*/
+
+        @media only screen and (min-width: 998px) {
+            width: calc(78vw + 20px);
+            font-size: 11vw;
+            margin-bottom: 30px;
+        }
+
+        span {
+            text-align: left;
+        }
+    }
+}
+
+.calltoaction {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        display: block;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 45px;
+
+        @media only screen and (min-width: 998px) {
+            font-size: 45px;
+        }
+    }
+
+    a {
+        width: auto;
+        border: 1px solid #0a0a0a;
+        color: #0a0a0a;
+        padding: 15px 45px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 21px;
+
+        &:hover {
+            background-color: #0a0a0a;
+            color: #e9eaea;
+        }
+    }
+}
+
+.copyright {
+    width: 66%;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    opacity: 0.25;
+
+    @media only screen and (min-width: 441px) {
+        left: 60px;
+        bottom: 60px;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+
+    span {
+        font-size: 12px;
+    }
+
+    a {
+        font-size: 12px;
+        margin-right: 5px;
+        color: #0a0a0a;
+
+        &:hover {
+            color: #FEA166;
+        }
+    }
+}
+
+.footerlogo {
+    position: absolute;
+    top: 45px;
+    left: 45px;
+
+    span {
+        font-size: 27px;
+        font-weight: 700;
+        color: #ccc;
+    }
+}

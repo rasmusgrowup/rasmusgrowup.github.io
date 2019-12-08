@@ -1,0 +1,141 @@
+/* --- General styles --- */
+
+html * {
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', Times, serif;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e9eaea;
+    /*cursor: grab;*/
+
+    &:active {
+        cursor: grabbing;
+    }
+}
+
+.wrapper {
+  width: 100vw;
+  margin: 0 auto;
+  overflow-x: hidden;
+  padding-bottom: 500px;
+}
+
+.anim {
+    opacity: 0;
+}
+
+.spacer {
+margin-top: 90px;
+margin-bottom: 90px;
+}
+
+.naeste {
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 10;
+    bottom: 105px;
+    left:15px;
+    transform: rotateZ(-90deg);
+
+    img {
+        height: 9px;
+        margin-right: 12px;
+    }
+
+    a {
+        color: #1A1918;
+        font-weight: 700;
+        text-decoration: none;
+    }
+}
+
+img, span, p, h1, h2, h3, h4, h5, h6 {
+    color: #0a0a0a;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+   user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
+@media only screen and (max-width: 998px) {
+    .hide-m {
+        display: none !important;
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 500px;
+    width: 100%;
+    background-color: #e9eaea;
+    display: flex;
+    place-content: center;
+}
+
+
+.button {
+    width: auto;
+    border: 1px solid #0a0a0a;
+    color: #0a0a0a;
+    padding: 15px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 21px;
+
+    &:hover {
+        background-color: #0a0a0a;
+        color: #bacecd;
+
+        span {
+            background-image: url(/src/svg/arrow-right-FDBC66.svg);
+        }
+    }
+
+    span {
+        display: inline-block;
+        margin-left: 10px;
+        height: 15px;
+        width: 15px;
+        background-image: url(/src/svg/arrow-right.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.button-tilbage {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+
+    @media only screen and (min-width: 998px) {
+        top: 60px;
+        left: 60px;
+
+    }
+}
+
+.transition-fade {
+    transition: .4s;
+    opacity: 1;
+}
+html.is-animating .transition-fade{
+    opacity: 0;
+}
