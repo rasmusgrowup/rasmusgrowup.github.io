@@ -20,6 +20,8 @@ body {
     }
 }
 
+html, body {height: 100%}
+
 .wrapper {
   width: 100vw;
   margin: 0 auto;
@@ -104,7 +106,7 @@ footer {
         color: #bacecd;
 
         span {
-            background-image: url(/src/svg/arrow-right-FDBC66.svg);
+            background-image: url(/svg/arrow-right-FDBC66.svg);
         }
     }
 
@@ -113,7 +115,7 @@ footer {
         margin-left: 10px;
         height: 15px;
         width: 15px;
-        background-image: url(/src/svg/arrow-right.svg);
+        background-image: url(/svg/arrow-right.svg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -122,6 +124,7 @@ footer {
 
 .button-tilbage {
     position: absolute;
+    z-index: 99;
     top: 30px;
     left: 30px;
 

@@ -1,0 +1,5 @@
+User-agent: *
+disallow: /vilkaar.html
+
+Sitemap: https://www.growupstudio.dk/sitemap.xml
+Sitemap: http://www.growupstudio.dk/sitemap.xml
